@@ -7,4 +7,8 @@ Extract content from files with the format:
 
 tag=content
 
-Receives two arguments, the file to extract, and the file to be outputted/
+Receives two arguments, the file to extract and the file to be outputted.
+
+Usage: 
+
+java -jar extractor.jar sourcefile destinationfile
