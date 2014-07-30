@@ -32,8 +32,10 @@ public class Extract {
 			while ((line = reader.readLine()) != null) {
 				if(line.length() > 0 && !line.substring(0, 1).equals("#")){
 					if(line.contains("=")){
-					    String extracted = line.substring(line.lastIndexOf("=") + 1).trim();
-					    collectionOfStrings.add(extracted);
+					    String extracted = line.substring(line.indexOf("=") + 1).trim();
+					    if(extracted.length() > 0){
+					    	collectionOfStrings.add(extracted);
+					    }
 					}
 				}
 			}
